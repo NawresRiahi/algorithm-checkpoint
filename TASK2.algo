@@ -1,0 +1,19 @@
+ALGORITHM SUM
+VAR
+   tab : ARRAY_OF INTEGER[]; 
+   tab1 : ARRAY_OF INTEGER[];
+   tab2 : ARRAY_OF INTEGER[];
+
+   i : INTEGER; 
+   j:INTEGER;
+   k:INTEGER;
+BEGIN
+  tab := {3,1,7,9}; 
+  tab1:={2,4,1,9,3};
+  tab2:={};
+  FOR i FROM 0 TO tab.length DO
+    FOR j FROM 0 TO tab1.length DO
+     IF tab[i]<>tab[j] THEN
+      tab2[k]:= tab[i]
+
+

@@ -1,0 +1,24 @@
+ALGORITHM sentence
+VAR
+   str1: STRING[];
+   i : INTEGER;
+   nbr:=0;
+   nbv:=0;
+BEGIN
+   Write("Give the sentence");
+   Read(str1);
+    FOR i FROM 0 TO str1.length STEP 1 DO
+        IF (str1[i]=='') THEN
+               nbr:=nbr+1;
+        END_IF
+        IF (str1[i]=='.') THEN
+            BREAK;
+        END_IF
+    END_FOR
+    write(nbr);
+    FOR i FROM 0 TO str1.length step 1 DO
+        IF (str1[i].ToLower=='a' or str1[i].ToLower=='o' or str1[i].ToLower=='i' or str1[i].ToLower=='u'str1[i].ToLower=='y' or str1[i].ToLower=='e') THEN
+             nbv:= nbv + 1;
+        END_IF
+    END_FOR
+
